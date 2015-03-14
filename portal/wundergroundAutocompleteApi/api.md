@@ -17,4 +17,4 @@ _The API notebooks are all executable! Hit "enter" in any code cell to execute i
 
 This portal and its contents are not affiliated with Weather Underground. They are, however, useful for working with, and learning about, the Weather Underground API.
 
-The official developer API portal for Weather Underground is at <a href="http://www.wunderground.com" target="_blank">http://www.wunderground.com</a>
+The official developer API portal for Weather Underground is at <a href="http://www.wunderground.com/weather/api/d/docs" target="_blank">http://www.wunderground.com/weather/api/d/docs</a>
