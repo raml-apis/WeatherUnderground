@@ -213,7 +213,7 @@
         },
         "wind_gust_mph": {
           "required": false,
-          "type": "string"
+          "type": "number"
         },
         "wind_kph": {
           "required": false,
@@ -221,7 +221,7 @@
         },
         "wind_gust_kph": {
           "required": false,
-          "type": "string"
+          "type": "number"
         },
         "pressure_mb": {
           "required": false,

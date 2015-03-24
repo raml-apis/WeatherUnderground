@@ -1,828 +1,804 @@
 {
+  "required": true,
   "$schema": "http://json-schema.org/draft-03/schema",
-  "required": false,
   "type": "object",
   "properties": {
     "response": {
-      "required": false,
       "type": "object",
+      "required": false,
       "properties": {
         "version": {
-          "required": false,
-          "type": "string"
+          "type": "string",
+          "required": false
         },
         "termsofService": {
-          "required": false,
-          "type": "string"
+          "type": "string",
+          "required": false
         },
         "features": {
-          "required": false,
           "type": "object",
+          "required": false,
           "properties": {
             "currenthurricane": {
-              "required": false,
-              "type": "integer"
+              "type": "number",
+              "required": false
             }
           }
         }
       }
     },
     "currenthurricane": {
-      "required": false,
       "type": "array",
-      "items": {
-        "required": false,
+      "required": false,
+      "items": [{
         "type": "object",
         "properties": {
           "stormInfo": {
-            "required": false,
             "type": "object",
+            "required": false,
             "properties": {
               "stormName": {
-                "required": false,
-                "type": "string"
+                "type": "string",
+                "required": false
               },
               "stormName_Nice": {
-                "required": false,
-                "type": "string"
+                "type": "string",
+                "required": false
               },
               "stormNumber": {
-                "required": false,
-                "type": "string"
+                "type": "string",
+                "required": false
+              },
+              "requesturl": {
+                "type": "string",
+                "required": false
+              },
+              "wuiurl": {
+                "type": "string",
+                "required": false
               }
             }
           },
           "Current": {
-            "required": false,
             "type": "object",
+            "required": false,
             "properties": {
               "lat": {
-                "required": false,
-                "type": "number"
+                "type": "number",
+                "required": false
               },
               "lon": {
-                "required": false,
-                "type": "number"
+                "type": "number",
+                "required": false
               },
               "SaffirSimpsonCategory": {
-                "required": false,
-                "type": "integer"
+                "type": "number",
+                "required": false
               },
               "Category": {
-                "required": false,
-                "type": "string"
+                "type": "string",
+                "required": false
               },
               "Time": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "hour": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "hour_padded": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "year": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mon": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mon_padded": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mon_abbrev": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mday": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mday_padded": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "yday": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "isdst": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "epoch": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "pretty": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "civil": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "month_name": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "month_name_abbrev": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_night": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_abbrev": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_unlang": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_night_unlang": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "ampm": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   }
                 }
               },
               "TimeGMT": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "hour": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "hour_padded": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "year": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mon": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mon_padded": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mon_abbrev": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mday": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "mday_padded": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "yday": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "epoch": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "pretty": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "civil": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "month_name": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "month_name_abbrev": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_night": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_abbrev": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_unlang": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "weekday_name_night_unlang": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "ampm": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   }
                 }
               },
               "WindSpeed": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "Kts": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "Mph": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "Kph": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   }
                 }
               },
               "WindGust": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "Kts": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "Mph": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "Kph": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   }
                 }
               },
               "Fspeed": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "Kts": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "Mph": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "Kph": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   }
                 }
               },
               "Movement": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "Degrees": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "Text": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   }
                 }
               },
               "Pressure": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "mb": {
-                    "required": false,
-                    "type": "integer"
+                    "type": "number",
+                    "required": false
                   },
                   "inches": {
-                    "required": false,
-                    "type": "number"
+                    "type": "number",
+                    "required": false
                   }
                 }
               },
               "WindQuadrants": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "comment": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "quad_1": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "quad_2": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "quad_3": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   },
                   "quad_4": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   }
                 }
               },
               "WindRadius": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "34": {
-                    "required": false,
                     "type": "object",
+                    "required": false,
                     "properties": {
                       "NE": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "SE": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "SW": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "NW": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       }
                     }
                   },
                   "50": {
-                    "required": false,
                     "type": "object",
+                    "required": false,
                     "properties": {
                       "NE": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "SE": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "SW": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "NW": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       }
                     }
                   },
                   "64": {
-                    "required": false,
                     "type": "object",
+                    "required": false,
                     "properties": {
                       "NE": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "SE": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "SW": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       },
                       "NW": {
-                        "required": false,
-                        "type": "integer"
+                        "type": "object",
+                        "required": false
                       }
                     }
                   }
                 }
               },
               "SeaQuadrants": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "comment": {
-                    "required": false,
-                    "type": "string"
-                  },
-                  "quad_1": {
-                    "required": false,
-                    "type": "string"
-                  },
-                  "quad_2": {
-                    "required": false,
-                    "type": "string"
-                  },
-                  "quad_3": {
-                    "required": false,
-                    "type": "string"
-                  },
-                  "quad_4": {
-                    "required": false,
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                   }
                 }
               },
               "SeaRadius": {
-                "required": false,
                 "type": "object",
+                "required": false,
                 "properties": {
                   "12": {
-                    "required": false,
                     "type": "object",
-                    "properties": {
-                      "NE": {
-                        "required": false,
-                        "type": "integer"
-                      },
-                      "SE": {
-                        "required": false,
-                        "type": "integer"
-                      },
-                      "SW": {
-                        "required": false,
-                        "type": "integer"
-                      },
-                      "NW": {
-                        "required": false,
-                        "type": "integer"
-                      }
-                    }
+                    "required": false
                   }
                 }
               }
             }
           },
           "forecast": {
-            "required": false,
             "type": "array",
-            "items": {
-              "required": false,
+            "required": false,
+            "items": [{
               "type": "object",
               "properties": {
                 "ForecastHour": {
-                  "required": false,
-                  "type": "string"
+                  "type": "string",
+                  "required": false
                 },
                 "SaffirSimpsonCategory": {
-                  "required": false,
-                  "type": "integer"
+                  "type": "number",
+                  "required": false
                 },
                 "lat": {
-                  "required": false,
-                  "type": "number"
+                  "type": "number",
+                  "required": false
                 },
                 "lon": {
-                  "required": false,
-                  "type": "number"
+                  "type": "number",
+                  "required": false
                 },
                 "Category": {
-                  "required": false,
-                  "type": "string"
+                  "type": "string",
+                  "required": false
                 },
                 "Time": {
-                  "required": false,
                   "type": "object",
+                  "required": false,
                   "properties": {
                     "hour": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "hour_padded": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "year": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mon": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mon_padded": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mon_abbrev": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mday": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mday_padded": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "yday": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "isdst": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "epoch": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "pretty": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "civil": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "month_name": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "month_name_abbrev": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_night": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_abbrev": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_unlang": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_night_unlang": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "ampm": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     }
                   }
                 },
                 "TimeGMT": {
-                  "required": false,
                   "type": "object",
+                  "required": false,
                   "properties": {
                     "hour": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "hour_padded": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "year": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mon": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mon_padded": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mon_abbrev": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mday": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "mday_padded": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "yday": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "epoch": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "pretty": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "civil": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "month_name": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "month_name_abbrev": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_night": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_abbrev": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_unlang": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "weekday_name_night_unlang": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "ampm": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     }
                   }
                 },
                 "WindSpeed": {
-                  "required": false,
                   "type": "object",
+                  "required": false,
                   "properties": {
                     "Kts": {
-                      "required": false,
-                      "type": "integer"
+                      "type": "number",
+                      "required": false
                     },
                     "Mph": {
-                      "required": false,
-                      "type": "integer"
+                      "type": "number",
+                      "required": false
                     },
                     "Kph": {
-                      "required": false,
-                      "type": "integer"
+                      "type": "number",
+                      "required": false
                     }
                   }
                 },
                 "WindGust": {
-                  "required": false,
                   "type": "object",
+                  "required": false,
                   "properties": {
                     "Kts": {
-                      "required": false,
-                      "type": "integer"
+                      "type": "number",
+                      "required": false
                     },
                     "Mph": {
-                      "required": false,
-                      "type": "integer"
+                      "type": "number",
+                      "required": false
                     },
                     "Kph": {
-                      "required": false,
-                      "type": "integer"
+                      "type": "number",
+                      "required": false
                     }
                   }
                 },
                 "WindQuadrants": {
-                  "required": false,
                   "type": "object",
+                  "required": false,
                   "properties": {
                     "comment": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "quad_1": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "quad_2": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "quad_3": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     },
                     "quad_4": {
-                      "required": false,
-                      "type": "string"
+                      "type": "string",
+                      "required": false
                     }
                   }
                 },
                 "WindRadius": {
-                  "required": false,
                   "type": "object",
+                  "required": false,
                   "properties": {
                     "34": {
-                      "required": false,
                       "type": "object",
+                      "required": false,
                       "properties": {
                         "NE": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         },
                         "SE": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         },
                         "SW": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         },
                         "NW": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         }
                       }
                     },
                     "50": {
-                      "required": false,
                       "type": "object",
+                      "required": false,
                       "properties": {
                         "NE": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         },
                         "SE": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         },
                         "SW": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         },
                         "NW": {
-                          "required": false,
-                          "type": "integer"
+                          "type": "object",
+                          "required": false
                         }
                       }
                     },
                     "64": {
-                      "required": false,
                       "type": "object",
+                      "required": false,
                       "properties": {
                         "NE": {
-                          "required": false,
-                          "type": "null"
+                          "type": "object",
+                          "required": false
                         },
                         "SE": {
-                          "required": false,
-                          "type": "null"
+                          "type": "object",
+                          "required": false
                         },
                         "SW": {
-                          "required": false,
-                          "type": "null"
+                          "type": "object",
+                          "required": false
                         },
                         "NW": {
-                          "required": false,
-                          "type": "null"
+                          "type": "object",
+                          "required": false
                         }
                       }
                     }
                   }
+                },
+                "ErrorRadius": {
+                  "type": "string",
+                  "required": false
                 }
               }
-            }
+            }]
           },
           "ExtendedForecast": {
             "required": false,
@@ -839,11 +815,1399 @@
             }
           },
           "track": {
+            "type": "array",
             "required": false,
-            "type": "string"
+            "items": [{
+              "type": "object",
+              "properties": {
+                "SaffirSimpsonCategory": {
+                  "type": "number",
+                  "required": false
+                },
+                "Category": {
+                  "type": "string",
+                  "required": false
+                },
+                "lat": {
+                  "type": "number",
+                  "required": false
+                },
+                "lon": {
+                  "type": "number",
+                  "required": false
+                },
+                "Time": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "isdst": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "TimeGMT": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindSpeed": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "Kts": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Mph": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Kph": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "Pressure": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "mb": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "inches": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "WindQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_1": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_2": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_3": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_4": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "34": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "50": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "object",
+                          "required": false
+                        }
+                      }
+                    },
+                    "64": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "object",
+                          "required": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "SeaQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "SeaRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "12": {
+                      "type": "object",
+                      "required": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "properties": {
+                "SaffirSimpsonCategory": {
+                  "type": "number",
+                  "required": false
+                },
+                "Category": {
+                  "type": "string",
+                  "required": false
+                },
+                "lat": {
+                  "type": "number",
+                  "required": false
+                },
+                "lon": {
+                  "type": "number",
+                  "required": false
+                },
+                "Time": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "isdst": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "TimeGMT": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindSpeed": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "Kts": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Mph": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Kph": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "Pressure": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "mb": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "inches": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "WindQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_1": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_2": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_3": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_4": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "34": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "50": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "64": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "object",
+                          "required": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "SeaQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "SeaRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "12": {
+                      "type": "object",
+                      "required": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "properties": {
+                "SaffirSimpsonCategory": {
+                  "type": "number",
+                  "required": false
+                },
+                "Category": {
+                  "type": "string",
+                  "required": false
+                },
+                "lat": {
+                  "type": "number",
+                  "required": false
+                },
+                "lon": {
+                  "type": "number",
+                  "required": false
+                },
+                "Time": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "isdst": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "TimeGMT": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindSpeed": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "Kts": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Mph": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Kph": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "Pressure": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "mb": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "inches": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "WindQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_1": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_2": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_3": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_4": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "34": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "50": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "64": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "number",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "number",
+                          "required": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "SeaQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "SeaRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "12": {
+                      "type": "object",
+                      "required": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "properties": {
+                "SaffirSimpsonCategory": {
+                  "type": "number",
+                  "required": false
+                },
+                "Category": {
+                  "type": "string",
+                  "required": false
+                },
+                "lat": {
+                  "type": "number",
+                  "required": false
+                },
+                "lon": {
+                  "type": "number",
+                  "required": false
+                },
+                "Time": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "isdst": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "TimeGMT": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "hour": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "hour_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "year": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mon_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "mday_padded": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "yday": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "epoch": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "pretty": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "civil": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "month_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_abbrev": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "weekday_name_night_unlang": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "ampm": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindSpeed": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "Kts": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Mph": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "Kph": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "Pressure": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "mb": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "inches": {
+                      "type": "number",
+                      "required": false
+                    }
+                  }
+                },
+                "WindQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_1": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_2": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_3": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "quad_4": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "WindRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "34": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "object",
+                          "required": false
+                        }
+                      }
+                    },
+                    "50": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "object",
+                          "required": false
+                        }
+                      }
+                    },
+                    "64": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "NE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SE": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "SW": {
+                          "type": "object",
+                          "required": false
+                        },
+                        "NW": {
+                          "type": "object",
+                          "required": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "SeaQuadrants": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "comment": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "SeaRadius": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "12": {
+                      "type": "object",
+                      "required": false
+                    }
+                  }
+                }
+              }
+            }]
           }
         }
-      }
+      }]
     }
   }
 }
