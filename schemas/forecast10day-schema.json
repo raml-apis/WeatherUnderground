@@ -260,11 +260,11 @@
                     "properties": {
                       "in": {
                         "required": false,
-                        "type": "integer"
+                        "type": "number"
                       },
                       "cm": {
                         "required": false,
-                        "type": "integer"
+                        "type": "number"
                       }
                     }
                   },
@@ -274,11 +274,11 @@
                     "properties": {
                       "in": {
                         "required": false,
-                        "type": "integer"
+                        "type": "number"
                       },
                       "cm": {
                         "required": false,
-                        "type": "integer"
+                        "type": "number"
                       }
                     }
                   },
@@ -288,11 +288,11 @@
                     "properties": {
                       "in": {
                         "required": false,
-                        "type": "integer"
+                        "type": "number"
                       },
                       "cm": {
                         "required": false,
-                        "type": "integer"
+                        "type": "number"
                       }
                     }
                   },
