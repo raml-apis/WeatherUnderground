@@ -22,7 +22,7 @@ Create Wether Underground REST client.
 
 ```javascript
 // Read about the Weather Underground API at https://anypoint.mulesoft.com/apiplatform/popular/admin/#/dashboard/apis/7733/versions/7867/contracts
-API.createClient('client', '/apiplatform/repository/public/organizations/30/apis/7733/versions/7867/definition',
+API.createClient('client', '#REF_TAG_DEFENITION',
 {
   baseUriParameters:{
     api_key: API_KEY
@@ -459,7 +459,7 @@ Create Wether Underground autocomplete API REST client.
 
 ```javascript
 // Read about the Weather Underground Autocomplete API at https://anypoint.mulesoft.com/apiplatform/popular/admin/#/dashboard/apis/7779/versions/7914/contracts
-API.createClient('clientAutocomplete', '/apiplatform/repository/public/organizations/30/apis/7779/versions/7914/definition');
+API.createClient('clientAutocomplete', '#REF_TAG_DEFENITION');
 ```
 
 Returns a list of locations or hurricanes which match against a partial query. For example, searching for San F will return San Francisco, California, San Fernando del Valle de Catamarca, Argentina, and San Felipe de Puerto Plata, Dominican Republic, among others.
