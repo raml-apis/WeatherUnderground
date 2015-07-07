@@ -1,1 +1,1 @@
-Real-time weather information via the Internet.
+Real-time weather information via the Internet. This portal describe Weather Underground AutoComplete API.
